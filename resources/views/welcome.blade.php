@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
     <head>
         <meta charset="utf-8">
@@ -20,21 +20,9 @@
             }
         </style>
     </head>
-    <body class="antialiased">
+    <body class="antialiased bg-black">
+        @include('layouts.nav')
         <div class="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-            @if (Route::has('login'))
-                <div class="hidden fixed top-0 right-0 px-6 py-4 sm:block">
-                    @auth
-                        <a href="{{ url('/dashboard') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Dashboard</a>
-                    @else
-                        <a href="{{ route('login') }}" class="text-sm text-gray-700 dark:text-gray-500 underline">Log in</a>
-
-                        @if (Route::has('register'))
-                            <a href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 dark:text-gray-500 underline">Register</a>
-                        @endif
-                    @endauth
-                </div>
-            @endif
 
             <div class="max-w-6xl mx-auto sm:px-6 lg:px-8">
                 <div class="flex justify-center pt-8 sm:justify-start sm:pt-0">
@@ -128,5 +116,585 @@
                 </div>
             </div>
         </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </body>
+</html> --}}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="{{ asset('css/app.css') }}">
+    <style>
+        *{
+            font-family: 'League Spartan', sans-serif;
+        }
+        header{
+            background: url("{{asset('img/header.jpg')}}");
+            position: relative;
+            width: 100%;
+            background-size: cover;
+            background-position: center;
+        }
+        header::after{
+            content: "";
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7));
+            position: absolute;
+        }
+        .list-topic:hover span{
+            font-size: 25px !important;
+            font-weight: bold;
+            letter-spacing: 0.5px;
+            top: 50%;
+            bottom: 0;
+            transform: translate(-50%, -50%) !important;
+        }
+        .list-topic:hover span::after{
+            font-size: 13px !important;
+            display: block !important
+        }
+    </style>
+</head>
+<body 
+    id="app"
+    {{-- style="background: linear-gradient(-45deg, #821FC8, #23ADD1 );" --}}
+    style="background-color: #fafafa"
+>
+    
+    @include('layouts.nav')
+
+    <header 
+        class="
+            grid h-[500px]
+            md:grid-row-3 md:h-[750px]
+            lg:grid-cols-3 lg:h-[600px] 
+        "
+    >
+        <div 
+            class="
+                z-10 relative flex items-center
+                px-5
+                md:row-span-2 md:px-10
+                lg:col-span-2 lg:pl-20
+            "
+        >
+            <section>
+                <span 
+                    class="text-white rounded" 
+                    style="background: linear-gradient(-45deg, #821FC8, #23ADD1 ); padding: 6px 10px;
+                ">
+                    <b>#</b>
+                    ALOPE TAGLINE
+                </span>
+                <h1 
+                    class="
+                        text-white mt-3
+                        w-full text-3xl
+                        md:text-5xl 
+                        lg:text-6xl lg:w-[500px]
+                    "
+                >
+                    African Nation Are Strugling To
+                </h1>
+
+                <div 
+                    class="
+                        mt-2 mb-5
+                        lg:mt-5 lg:mb-10
+                    "
+                >
+                    <small class="text-gray-300">
+                        BY <b class="text-white">ADMIN</b>
+                    </small>
+    
+                    <small class="text-gray-300 md:ml-7 ml-4">
+                        <i class="fa-solid fa-calendar mr-1"></i> 
+                        <b class="text-white">17 Januari 2003</b>
+                    </small>
+    
+                    <small class="text-gray-300 md:ml-7 ml-4">
+                        <i class="fa-solid fa-signal mr-1"></i> 
+                        <b class="text-white">100 views</b>
+                    </small>
+                </div>
+                <a href="" class="bg-[#2962ff] hover:bg-[#1251ff] md:px-7 md:py-3 px-5 py-2 rounded text-white">Read More</a>
+            </section>
+        </div>
+
+        <div 
+            class="
+                bg-black/60 z-10 flex items-center justify-between bottom-0
+                !h-[110px] absolute w-full overflow-auto
+                md:row-span-1 md:justify-between md:p-0 md:!h-[150px] 
+                lg:col-span-1 lg:!h-[600px] lg:relative lg:p-5 lg:overflow-hidden
+            "
+        >
+            <ul class="w-[1650px] flex lg:inline">
+                <li  
+                    class="
+                        w-screen px-3 
+                        md:w-[450px] md:mb-0 md:px-6
+                        lg:mb-7 
+                    "
+                >
+                    <div class="flex">
+                        <section class="flex items-center">
+                            <img src="{{ asset('img/sideheader.jpg') }}" class="w-[50px] md:w-[75px] rounded-full mr-5">
+                        </section>
+                        <section>
+                            <small class="text-gray-400">Technology</small>
+                            <h3 class="text-white text-xl tracking-wide">African Nation are strunggling to</h3>
+                            <small class="text-gray-400">
+                                <i class="fa-solid fa-calendar mr-1"></i> 
+                                13 Desember 2003
+                            </small>
+                        </section>
+                    </div>
+                </li>
+                <li 
+                    class="
+                        w-screen px-3
+                        md:w-[450px] md:mb-0 md:px-6
+                        lg:mb-7 
+                    "
+                >
+                    <div class="flex">
+                        <section class="flex items-center">
+                            <img src="{{ asset('img/sideheader.jpg') }}" class="w-[50px] md:w-[75px] rounded-full mr-5">
+                        </section>
+                        <section>
+                            <small class="text-gray-400">Technology</small>
+                            <h3 class="text-white text-xl tracking-wide">African Nation are strunggling to</h3>
+                            <small class="text-gray-400">
+                                <i class="fa-solid fa-calendar mr-1"></i> 
+                                13 Desember 2003
+                            </small>
+                        </section>
+                    </div>
+                </li>
+                <li  
+                    class="
+                        w-screen px-3
+                        md:w-[450px] md:mb-0 md:px-6
+                        lg:mb-7 
+                    "
+                >
+                    <div class="flex">
+                        <section class="flex items-center">
+                            <img src="{{ asset('img/sideheader.jpg') }}" class="w-[50px] md:w-[75px] rounded-full mr-5">
+                        </section>
+                        <section>
+                            <small class="text-gray-400">Technology</small>
+                            <h3 class="text-white text-xl tracking-wide">African Nation are strunggling to</h3>
+                            <small class="text-gray-400">
+                                <i class="fa-solid fa-calendar mr-1"></i> 
+                                13 Desember 2003
+                            </small>
+                        </section>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+
+    <section id="topic" class="mt-10 px-5 md:mt-10 lg:p-0">
+        <div 
+            class="
+                bg-white mx-auto rounded z-10 relative 
+                md:w-full 
+                lg:-translate-y-1/2 lg:w-4/5
+            "
+        >
+            <div class="lg:flex md:flex-row p-5">
+                <section class="lg:w-1/4 md:w-full mb-4 lg:mb-0">
+                    <h3 class="text-2xl tracking-wider font-semibold text-gray-700">Best Trending Topic</h3>
+                </section>
+                <section class="lg:w-3/4 w-full">
+                    <ul class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                        <li 
+                            class="
+                                list-topic relative cursor-pointer
+                                after:content-[''] 
+                                after:bg-black/40 
+                                after:w-full 
+                                after:h-full 
+                                after:absolute 
+                                after:top-0 
+                                after:left-0 
+                                after:rounded
+                            "
+                        >
+                            <img src="{{ asset('img/design.jpg') }}" class="rounded" width="100%">
+                            <span 
+                                class="
+                                    absolute text-[17px] transition bottom-[5px] left-1/2 -translate-x-1/2 text-white z-10
+                                    after:content-['(6)'] 
+                                    after:hidden 
+                                    after:text-center
+                                "
+                            >Design</span>
+                        </li>
+                        <li 
+                            class="
+                                list-topic relative cursor-pointer
+                                after:content-[''] 
+                                after:bg-black/40 
+                                after:w-full 
+                                after:h-full 
+                                after:absolute 
+                                after:top-0 
+                                after:left-0 
+                                after:rounded
+                            "
+                        >
+                            <img src="{{ asset('img/design.jpg') }}" class="rounded" width="100%">
+                            <span 
+                                class="
+                                    absolute text-[17px] transition bottom-[5px] left-1/2 -translate-x-1/2 text-white z-10
+                                    after:content-['(6)'] 
+                                    after:hidden 
+                                    after:text-center
+                                "
+                            >Design</span>
+                        </li>
+                        <li 
+                            class="
+                                list-topic relative cursor-pointer
+                                after:content-[''] 
+                                after:bg-black/40 
+                                after:w-full 
+                                after:h-full 
+                                after:absolute 
+                                after:top-0 
+                                after:left-0 
+                                after:rounded
+                            "
+                        >
+                            <img src="{{ asset('img/design.jpg') }}" class="rounded" width="100%">
+                            <span 
+                                class="
+                                    absolute text-[17px] transition bottom-[5px] left-1/2 -translate-x-1/2 text-white z-10
+                                    after:content-['(6)'] 
+                                    after:hidden 
+                                    after:text-center
+                                "
+                            >Design</span>
+                        </li>
+                        <li 
+                            class="
+                                list-topic relative cursor-pointer
+                                after:content-[''] 
+                                after:bg-black/40 
+                                after:w-full 
+                                after:h-full 
+                                after:absolute 
+                                after:top-0 
+                                after:left-0 
+                                after:rounded
+                            "
+                        >
+                            <img src="{{ asset('img/design.jpg') }}" class="rounded" width="100%">
+                            <span 
+                                class="
+                                    absolute text-[17px] transition bottom-[5px] left-1/2 -translate-x-1/2 text-white z-10
+                                    after:content-['(6)'] 
+                                    after:hidden 
+                                    after:text-center
+                                "
+                            >Design</span>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+    </section>
+
+    <main class="container mx-auto">
+        <div class="grid grid-cols-12 gap-12">
+            <div class="col-span-9">
+                <section class="flex justify-between items-center p-2 mb-7">
+                    <h3 class="relative text-4xl font-semibold tracking-wide after:content-[''] after:w-[10px] after:h-[10px] after:bg-blue-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-30px] after:rounded-full">Most Popular</h3>
+                    <ul class="flex border border-gray-500">
+                        <li class="bg-[#2962ff] cursor-pointer shadow-md shadow-[#2962ff] px-3 py-2 text-white">
+                            Technology
+                        </li>
+                        <li class="hover:bg-[#2962ff] px-3 py-2 cursor-pointer hover:shadow-md hover:shadow-[#2962ff] hover:text-white">
+                            Travel
+                        </li>
+                        <li class="hover:bg-[#2962ff] px-3 py-2 cursor-pointer hover:shadow-md hover:shadow-[#2962ff] hover:text-white">
+                            Healt
+                        </li>
+                        <li class="hover:bg-[#2962ff] px-3 py-2 cursor-pointer hover:shadow-md hover:shadow-[#2962ff] hover:text-white">
+                            Design
+                        </li>
+                    </ul>
+                </section>
+
+                <section>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="row-span-2 flex items-end relative rounded after:content-[''] after:bg-black/20 after:absolute after:w-full after:h-full after:top-0 after:rounded">
+                            <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover absolute">
+                            <section class="relative z-10 p-3">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-3xl mt-4 mb-5 text-white font-bold">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-200">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-5 pl-2">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-xl font-semibold mt-4 mb-5">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-5 pl-2">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-xl font-semibold mt-4 mb-5">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-5 pl-2">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-xl font-semibold mt-4 mb-5">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-5 pl-2">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-xl font-semibold mt-4 mb-5">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-500">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="bg-[#fbf8f5] p-5 rounded mt-10">
+                    <h3 class="relative text-4xl font-semibold tracking-wide inline after:content-[''] after:w-[10px] after:h-[10px] after:bg-blue-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-30px] after:rounded-full">Whats New</h3>
+                    
+                    <div class="grid grid-cols-2 gap-2 mt-6">
+                        <div class="row-span-4 flex items-end relative rounded after:content-[''] after:bg-black/20 after:absolute after:w-full after:h-full after:top-0 after:rounded">
+                            <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover absolute">
+                            <section class="relative z-10 p-3">
+                                <span class="bg-indigo-500 text-white rounded py-1 px-2">TECHNOLOGY</span>
+                                <h1 class="text-3xl mt-4 mb-5 text-white font-bold">African Nation Are Strugling To Save Their Wildlife</h1>
+                                <span class="text-gray-200">
+                                    <i class="fas fa-calendar mr-2"></i>
+                                    9 Desember
+                                </span>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-4 pl-2">
+                                <small>TECHNOLOGY</small>
+                                <h1 class="text-xl font-semibold mt-1 mb-2">African Nation Are Strugling</h1>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-4 pl-2">
+                                <small>TECHNOLOGY</small>
+                                <h1 class="text-xl font-semibold mt-1 mb-2">African Nation Are Strugling</h1>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-4 pl-2">
+                                <small>TECHNOLOGY</small>
+                                <h1 class="text-xl font-semibold mt-1 mb-2">African Nation Are Strugling</h1>
+                            </section>
+                        </div>
+                        <div class="flex">
+                            <section class="w-1/2 p-2">
+                                <img src="{{ asset('img/header.jpg') }}" class="w-full h-full object-cover rounded">
+                            </section>
+                            <section class="w-1/2 py-4 pl-2">
+                                <small>TECHNOLOGY</small>
+                                <h1 class="text-xl font-semibold mt-1 mb-2">African Nation Are Strugling</h1>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="col-span-3">
+
+
+                <section class="relative after:content-[''] after:absolute after:bg-blue-500/70 after:top-0 after:w-full after:h-full">
+                    <img src="{{ asset('img/banner.jpg') }}" class="w-full">
+                </section>
+
+                <section class="mt-5">
+                    <h3 class="relative text-2xl font-semibold tracking-wide inline after:content-[''] after:w-[10px] after:h-[10px] after:bg-blue-500 after:absolute after:top-1/2 after:-translate-y-1/2 after:right-[-30px] after:rounded-full">Stay Connected</h3>
+                    <ul>
+                        <li class="mb-2 px-4 text-white py-2 flex items-center" style="background: linear-gradient(to right, #1155bf, #2c6dd2)">
+                            <i class="fa-brands fa-facebook text-xl mr-3"></i>
+                            <p>Facebook</p>
+                        </li>
+                        <li class="mb-2 px-4 text-white py-2 flex items-center" style="background: linear-gradient(to right, #14a4e7, #54c2f0)">
+                            <i class="fa-brands fa-twitter text-xl mr-3"></i>
+                            <p>Twitter</p>
+                        </li>
+                        <li class="mb-2 px-4 text-white py-2 flex items-center" style="background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);">
+                            <i class="fa-brands fa-instagram text-xl mr-3"></i>
+                            <p>Instagram</p>
+                        </li>
+                        <li class="mb-2 px-4 text-white py-2 flex items-center" style="background: linear-gradient(to right, #ed1c24, #ff5252)">
+                            <i class="fa-brands fa-youtube text-xl mr-3"></i>
+                            <p>Youtube</p>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </div>
+        
+    </main>
+
+    <script src="https://kit.fontawesome.com/d02202f823.js" crossorigin="anonymous"></script>
+</body>
 </html>

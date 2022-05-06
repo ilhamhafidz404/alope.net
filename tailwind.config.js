@@ -8,6 +8,8 @@ module.exports = {
         './resources/views/**/*.blade.php',
     ],
 
+    important: '#app',
+
     theme: {
         extend: {
             fontFamily: {
